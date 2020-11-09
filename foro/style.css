@@ -1,0 +1,148 @@
+#table_div{
+    position: fixed;
+    top:330px;
+    left: 150px;
+}
+.menu{
+    background: rgb(166, 218, 228);
+    height: 80px;
+    
+    text-align: right;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: left ;
+    
+  }
+  .menu input{
+    position: fixed;
+    top: 30px;
+    left: 1100px;
+  }
+  .menu button{
+    position: fixed;
+    top: 25px;
+    left: 950px;
+    background: #848485;
+    width: 120px;
+    height: 35px;
+    color:white;
+    margin-right: 10px;
+    border-radius: 50px;
+  }
+ 
+  .cuadro{
+    height: 0px;/*alto*/
+    text-align: right;
+    position: fixed;
+    top: 260px;
+  left: 0px;
+  width: 100%;/*ancho*/
+  border:rgb(182, 182, 182) 1px solid;
+  border-radius: 10px;
+  }
+  h1{
+    position: fixed;
+    top: 5px;
+    left: 10px;
+    color: rgb(17, 17, 17);
+  }
+  h2{
+    position: fixed;
+    top: 100px;
+    left: 50px;
+    color: rgb(75, 71, 71);
+    font-size: 60px; 
+  }
+  h3{
+    position: fixed;
+    top: 190px;
+    left: 50px;
+    font-size: 20px;
+    color: rgb(75, 71, 71);
+  }
+  
+  .container{
+    position: fixed;
+    top: 200px;
+    left: 10px;
+    color: rgb(17, 17, 17);
+  }
+  .parrafo{
+    position: fixed;
+    top: 270px;
+    left: 130px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 900;/*negrita*/
+  }
+  #piechart{
+    position: fixed;
+    top:330px;
+    left: 930px;
+  }
+  h5{
+    position: fixed;
+    top:260px;
+    left: 940px;font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 900;/*negrita*/
+  }
+.boton{
+    position: fixed;
+    top:550px;
+    left: 1070px;font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 900;/*negrita*/
+}
+.boton button{
+    background: #261cb1;
+    width: 150px;
+    height: 40px;
+    color:white;
+    margin-right: 10px;
+    border-radius: 50px;/*redondear el boton*/
+}
+.boton1{
+    position: fixed;
+    top:550px;
+    left: 180px;font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 900;/*negrita*/
+}
+.boton1 button{
+    background: #261cb1;
+    width: 150px;
+    height: 40px;
+    color:white;
+    margin-right: 10px;
+    border-radius: 50px;/*redondear el boton*/
+}
+#donutchart{
+    position: fixed;
+    top:330px;
+    left: 530px;
+}
+h6{
+    position: fixed;
+    top:245px;
+    left: 540px;font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 900;/*negrita*/
+  }
+  .boton2{
+    position: fixed;
+    top:550px;
+    left: 580px;font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 900;/*negrita*/
+}
+.boton2 button{
+    background: #261cb1;
+    width: 150px;
+    height: 40px;
+    color:white;
+    margin-right: 10px;
+    border-radius: 50px;/*redondear el boton*/
+}

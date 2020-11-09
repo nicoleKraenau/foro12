@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['table']});
+      google.charts.setOnLoadCallback(drawTable);
+
+      function drawTable() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Distrito');
+        data.addColumn('number', 'Mascarillas');
+      
+        data.addRows([
+          ['Surco',  {v: 7000}],
+          ['Miraflores',  {v: 7000}],
+          ['Chorrillos',  {v: 6000}],
+          ['San Isidro',  {v: 3000}],
+        ]);
+
+        var table = new google.visualization.Table(document.getElementById('table_div'));
+
+        table.draw(data, {showRowNumber: true });
+      }
+    </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Mascarilla', 'Entidad'],
+          ['ONG LiMA',     11],
+          ['ONG Salud',      2],
+          ['ONG Comunidad',  2],
+          ['ONG Compromiso', 2],
+          
+        ]);
+
+        var options = {
+          title: 'My Daily Activities'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript">
+        google.charts.load("current", {packages:["corechart"]});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['Mascarrila', 'Por Persona'],
+            ['Niños',     11],
+            ['Jovenes',      2],
+            ['Adultos',  2],
+            ['Ancianos', 2],
+            
+          ]);
+  
+          var options = {
+            title: 'My Daily Activities',
+            pieHole: 0.4,
+          };
+  
+          var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+          chart.draw(data, options);
+        }
+      </script>
+</head>
+<body>
+    <div id="table_div"></div>
+    <nav class="menu">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        
+    </nav>
+    <h1>AllAboutMask</h1>
+    <h2>Global Dashboard</h2>
+    <h3>Realtime Performance Indicators</h3>
+    <div class="parrafo">
+        <p>Mascarillas solicitadas por zona</p>
+    </div>
+    <div class="cuadro"></div>
+    <div id="piechart" style="width: 400px; height: 200px;"></div>
+    <h5>Mascarillas solicitada por Entidades</h5>
+    <div class="boton">
+        <button>See Detail</button>
+    </div>
+    <div class="boton1">
+        <button>See Detail</button>
+    </div>
+    <div id="donutchart" style="width: 350px; height: 200px;"></div>
+    <h6>Mascarillas por personas </h6>
+    <div class="boton2">
+        <button>See Detail</button>
+    </div>
+    <form class="form-inline my-2 my-lg-0">
+      
+    </form>
+</body>
